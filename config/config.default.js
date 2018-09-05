@@ -10,7 +10,7 @@ module.exports = appInfo => {
   config.middleware = [];
 
   exports.mongoose = {
-    url: 'mongodb://127.0.0.1/prize-form-back',
+    url: 'mongodb://127.0.0.1/takeExpress',
     options: {}
   };
 

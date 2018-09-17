@@ -25,7 +25,6 @@ class HomeController extends Controller {
     const ctx = this.ctx;
     const Order = ctx.model.Order;
     const submissionOrders = await Order.find({"isTaken": false}).sort({"_id": -1});
-    // console.log(submissionOrders);
     ctx.body = submissionOrders;
   }
   async changeTaken() {
